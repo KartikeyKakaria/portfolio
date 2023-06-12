@@ -1,5 +1,6 @@
 import {
-    mobile,
+    next,
+    php,
     backend,
     creator,
     web,
@@ -13,8 +14,6 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -22,7 +21,7 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+    svelte
   } from "../assets";
 
   export const navLinks = [
@@ -54,8 +53,8 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Svelte Developer",
+      icon: svelte,
     },
   ];
 
@@ -97,131 +96,96 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Svelte",
+      icon: svelte,
     },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "next",
+      icon: next,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "PHP",
+      icon: php,
     },
   ];
 
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "HTML-CSS-JS Developer",
+      company_name: "2020",
+      icon: javascript,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "September 2020 - March 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "I started coding when i was in 7th grade at the age of 12, my first languages were html and css",
+        "Then i started to learn more about JavaScript and deep about its core concepts and that of programming as a whole",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "PHP Developer",
+      company_name: "2021",
+      icon: php,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "April 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "After i had learnt main things about Vanilla frontend, I started to learn more about the backend side of the web",
+        "I started with php during the start of my 8th grade and made various project with it, one is Qbonanza"
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Typescript/Express developer",
+      company_name: "2022",
+      icon: typescript,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "April 2022 - October 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "As i got more into the field and promoted to my 9th grade, I started to get more into new things and discovered about developing backend api's with node",
+        "I also learned typescript and learnt key concepts about type safety and http protocol during this time"
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Full Stack Developer",
+      company_name: "November 2022 - Present",
+      icon: reactjs,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "As time went on, I started to learn more about how full stack development works and started to learn it",
+        "I learnt various frameworks during this time such As React, Redux, Svelte< Passport.js MongoDb etc."
       ],
-    },
-  ];
-
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
 
   const projects = [
     {
-      name: "Car Rent",
+      name: "Car Racing",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based game made using pure vanilla js and css, with interactivity, scores and made with the understanding of the DOM model",
       tags: [
         {
-          name: "react",
+          name: "html",
+          color: "`red`-text-gradient",
+        },
+        {
+          name: "css",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
+          name: "vanilla-js",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/KartikeyKakaria/Car-Racing",
     },
     {
-      name: "Job IT",
+      name: "Chat Application",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A web application where users can create an account and find random people to have real time chat with, which would increase their social skills",
       tags: [
         {
           name: "react",
@@ -232,34 +196,34 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "socket-io",
+          color: "black-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/KartikeyKakaria/mern-chat-app",
     },
     {
-      name: "Trip Guide",
+      name: "Programmers-Media: Sociomedia",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A complete programmers chat and excercise media platform made in react, typescript express and mongodb. IT is currently in dev",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
+          color: "cyan-text-gradient",
+        },
+        {
+          name: "typescript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongodb",
           color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/KartikeyKakari/Sociomedia-backend",
     },
   ];
 
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
