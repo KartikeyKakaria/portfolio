@@ -168,7 +168,7 @@ import {
       tags: [
         {
           name: "html",
-          color: "`red`-text-gradient",
+          color: "text-orange-500",
         },
         {
           name: "css",
@@ -176,7 +176,7 @@ import {
         },
         {
           name: "vanilla-js",
-          color: "pink-text-gradient",
+          color: "text-yellow-500",
         },
       ],
       image: carrent,
@@ -210,11 +210,11 @@ import {
       tags: [
         {
           name: "react",
-          color: "cyan-text-gradient",
+          color: "blue-text-gradient",
         },
         {
           name: "typescript",
-          color: "blue-text-gradient",
+          color: "text-blue-800",
         },
         {
           name: "mongodb",

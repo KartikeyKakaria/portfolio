@@ -34,13 +34,13 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overiview</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
       <motion.p
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        I am an 15 year old Intermediate Software and Web developer and i have
+        I am a 15 year old Intermediate Software and Web developer and i have
         experience in JavaScript, Typescript, PHP and python. I also have good
         knowledge of frameworks like React, Redux, Express.js and Svelte. I have
         good work experience and is ready at your service for any project!

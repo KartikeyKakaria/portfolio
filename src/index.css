@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text: #040307;
+--background: #e0daf1;
+--primary-button: #ae66c7;
+--secondary-button: #e8c0de;
+--accent: #c766ae;
+}
+
 * {
   margin: 0;
   padding: 0;

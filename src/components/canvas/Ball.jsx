@@ -19,7 +19,7 @@ const Ball = (props) => {
       <mesh castShadow receiveShadow scale={3}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
-          color="#fff8eb"
+          color="#bca39e"
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading
