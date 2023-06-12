@@ -14,8 +14,39 @@ const Contact = () => {
   });
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = ({ target }) => {
+    const { name, value } = target;
+    setForm({ ...form, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      "service_p9rm0q7",
+      "template_r5quesz",
+      {
+        from_name: form.name,
+        to_name: "Kartikey",
+        from_email: form.email,
+        to_email: "kartikeykakaria5@gmail.com",
+        message: form.message,
+      },
+      "z1kqv7wKa5AixuTz9"
+    ).then(()=>{
+      setLoading(false);
+      alert("Thank you, I will get back to you as soon as possible");
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      })
+    }).catch(err=>{
+      console.log(err);
+      alert("Something went wrong");
+      setLoading(false)
+    })
+
+  }
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hiddden">
       <motion.div
@@ -70,8 +101,11 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
-      <motion.div className="xl:flex-1 xl:h-auto md:h-[550px] h-[250px] " variants={slideIn("right", "tween", 0.2, 1)}>
-        <EarthCanvas/>
+      <motion.div
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[250px] "
+        variants={slideIn("right", "tween", 0.2, 1)}
+      >
+        <EarthCanvas />
       </motion.div>
     </div>
   );
