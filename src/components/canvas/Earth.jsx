@@ -20,7 +20,7 @@ const EarthCanvas = () => {
         fov: 52,
         near: 0.1,
         far: 200,
-        position: [-4, 3, 6],
+        position: [-4, 3, 1],
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
