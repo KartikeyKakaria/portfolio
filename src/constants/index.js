@@ -155,7 +155,7 @@ import {
       date: "Jan 2023 - Present",
       points: [
         "As time went on, I started to learn more about how full stack development works and started to learn it",
-        "I learnt various frameworks during this time such As React, Redux, Svelte< Passport.js MongoDb etc."
+        "I learnt various frameworks during this time such As React, Redux, Svelte, Passport.js, Next.js, MongoDb and hope to increase my sphere of knowledge and experience"
       ],
     },
   ];
