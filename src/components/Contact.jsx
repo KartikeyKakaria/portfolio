@@ -29,7 +29,7 @@ const Contact = () => {
         to_name: "Kartikey",
         from_email: form.email,
         to_email: "kartikeykakaria5@gmail.com",
-        message: form.message,
+        message: form.message+" "+form.email,
       },
       "z1kqv7wKa5AixuTz9"
     ).then(()=>{
@@ -69,6 +69,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="what's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required
             />
           </label>
           <label className="flex flex-col">
@@ -80,6 +81,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="what's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required
             />
           </label>
           <label className="flex flex-col">
@@ -91,6 +93,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What do you wanna say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required
             />
           </label>
           <button
